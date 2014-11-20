@@ -3,19 +3,15 @@ using namespace std;
  
   void abc(int x){
    string letter;
-   for(int y; y <=  x; y++){
-  cout<<"Doing more stuff";
-   
-      if( (y / 2) == 0){
+   for(int y = 0; y <=  x; y++){
+      if( (y % 2) != 0){
         letter = "A";
       }else{
         letter = "B";
       }
-   cout<<letter;
-      for(int z; z <=  y; z++){
+      for(int z = 0; z <= y; z++){
          cout<<letter;
      }
-
      cout<<endl;
     }  
  }
@@ -32,8 +28,6 @@ using namespace std;
     cout<<"Terminating";
     return 0;
   } 
-
-   cout<<"Doing Stuff";    
    abc(n);
 
 
